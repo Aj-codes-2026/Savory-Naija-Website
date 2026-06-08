@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Savory Naija — a Nigerian restaurant in Ikeja, Lagos serving fresh, delicious meals in a warm and cozy atmosphere. Reserve your table today.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="Images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Savory Naija | Restaurant</title>
+  </head>
+  <body class="font-poppins bg-main text-secondary">
+    <header class="w-full flex justify-between items-center px-3 md:px-12 py-2.5 fixed z-50 blured top-0">
+      <a href="#home" class="flex items-center">
+        <img src="Images/Logo.png" alt="logo" class="w-8 md:w-11 aspect-square"/>
+        <span class="ml-2 leading-tight text-xs md:text-sm font-aurore font-bold">Savory Naija</span>
+      </a>
+      <button id="mobile-menu-btn" class="md:hidden text-2xl">
+            <i class="bx bx-menu" id="menu-icon"></i>
+        </button>
+      <nav id="nav-menu" class="nav-mobile md:flex flex-col md:flex-row absolute md:static top-full left-0 w-full md:w-auto bg-main md:bg-transparent p-4 md:p-0 items-center gap-4 md:gap-7 text-sm font-bavory text-center transition-all">
+        <a href="#about" class="block md:inline-block py-2 md:py-0 text-secondary hover:text-highlight hover:scale-110 transition-all">About</a>
+        <a href="#menu" class="block md:inline-block py-2 md:py-0 text-secondary hover:text-highlight hover:scale-110 transition-all">Menu</a>
+        <a href="#reviews" class="block md:inline-block py-2 md:py-0 text-secondary hover:text-highlight hover:scale-110 transition-all">Reviews</a>
+      </nav>
+      <a href="#contact">
+        <button class="btns text-sm md:text-base">Reserve Table</button>
+      </a>
+    </header>
+    <main class="pt-13 md:pt-16">
+      <section id="home" class="relative">
+        <div class="absolute bg-overlay w-full h-full"></div>
+        <div class="over-div relative flex flex-col items-center text-center gap-4 md:gap-7 px-4 md:pl-8 py-20">
+          <img id="hero-img" class="not-expanded" src="Images/savory-naija.png" alt="savory-naija">
+          <div id="text-div" class="flex flex-col items-center">
+            <p id="typewriter-text" class="text-[9px] w-full md:max-w-xl text-center italic wrap-break-word mb-3 md:mb-5 min-h-10 md:min-h-12"></p>
+          <div id="button-group" class="flex justify-center gap-4">
+            <a href="#menu" class="rise btns text-[18px] md:text-base">Menu</a>
+            <a href="#contact" class="rise btns text-[18px] md:text-base border-highlight bg-main hover:bg-highlight hover:border-secondary transition-all">Contact</a>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-20 px-4 bg-secondary flex flex-col justify-center items-center gap-5">
+            <h2 class="text-main self-start mb-5 text-3xl md:text-5xl">About Us</h2>
+            <div class="w-full md:w-4/5 grid-div">
+                <div class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3 flex flex-col justify-between gap-2.5">
+                    <article class="flex flex-col items-center px-2.5">
+                        <h4 class="text-center text-main font-extrabold text-lg md:text-xl">Our Story</h4>
+                        <p class="text-main2 text-center leading-tight tracking-normal text-xs md:text-sm">
+                            At Savory Naija, we started with a simple goal — to create a place where people can enjoy delicious meals in a warm and welcoming environment.
+                        </p>
+                    </article>
+                    <div class="h-48 md:h-[65%] rounded-2xl overflow-hidden">
+                        <img src="Images/chef-cooking.webp" alt="Chef cooking" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                
+                <div class="md:col-start-2 md:col-end-4 md:row-start-1 md:row-end-2 flex flex-col md:flex-row items-center justify-between gap-4">
+                    <article class="flex flex-col items-center px-2.5 w-full md:w-1/2">
+                        <h4 class="text-center text-main font-extrabold text-lg md:text-xl">Our Food</h4>
+                        <p class="text-main2 text-center leading-tight tracking-normal text-xs md:text-sm">
+                            We prepare every meal using fresh, high-quality ingredients to ensure rich flavor and consistent taste.
+                        </p>
+                    </article>
+                    <div class="w-full md:w-72 h-48 md:h-55 rounded-2xl overflow-hidden">
+                        <img src="Images/sharon-pittaway-KUZnfk-2DSQ-unsplash.jpg" alt="Kitchen Environment" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                
+                <div class="flex items-center">
+                    <article class="flex flex-col items-center px-2.5">
+                        <h4 class="text-center text-main font-extrabold text-lg md:text-xl">Our Experience</h4>
+                        <p class="text-main2 text-center leading-tight tracking-normal text-xs md:text-sm">
+                            Beyond great food, we focus on creating a comfortable and enjoyable atmosphere for our customers.
+                        </p>
+                    </article>
+                </div>
+                
+                <div class="flex items-center">
+                    <article class="flex flex-col items-center px-2.5">
+                        <h4 class="text-center text-main font-extrabold text-lg md:text-xl">Our Commitment</h4>
+                        <p class="text-main2 text-center leading-tight tracking-normal text-xs md:text-sm">
+                            We are dedicated to providing excellent service, quality meals, and a welcoming environment.
+                        </p>
+                    </article>
+                </div>
+            </div>
+      </section>
+
+      <section id="menu" class="py-16 px-4 border-b-2 border-secondary">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl md:text-5xl font-bold text-center mb-10">Menu</h2>
+          <h3 class="my-10 py-1 px-2 rounded-[5px] uppercase font-bold bg-highlight w-full text-2xl tracking-normal">Dishes</h3>
+      
+          <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-[95%] m-auto px-8">
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/4b70964e686d8621d34ea2693a12d58e.jpg" alt="Jollof Rice" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-lg">Jollof Rice</h4>
+              <p class="text-sm">Classic Nigerian party rice with grilled or fried chicken.</p>
+              <p class="font-bold text-amber-600 mt-2">₦4,500</p>
+            </div>
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/8a919df55968c312e842192404e31b8c.jpg" alt="pounded-yam-and-egusi" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-lg hover:text-secondary">Pounded Yam & Egusi Soup</h4>
+              <p class="text-sm hover:text-secondary">Smooth, stretchy pounded yam served with thick egusi soup.</p>
+              <p class="font-bold text-amber-600 mt-2">₦3,500</p>
+            </div>
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/ce30f674a8ee71424557b9a3cd41b5a1.jpg" alt="Suya" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-lg hover:text-secondary">Suya</h4>
+              <p class="text-sm hover:text-secondary">Spicy grilled meat skewers coated in a flavorful peanut spice mix.</p>
+              <p class="font-bold text-amber-600 mt-2">₦1,500</p>
+            </div>
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/62eb1416e862ee56d6e4fc06fb7c109b.jpg" alt="Amala-with-Ewedu-&-Gbegiri" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-lg hover:text-secondary">Amala with Ewedu & Gbegiri</h4>
+              <p class="text-sm hover:text-secondary">Soft, dark yam flour swallow served with two classic Yoruba soups.</p>
+              <p class="font-bold text-amber-600 mt-2">₦3,500</p>
+            </div>
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/b4620e0d8925c5e675f845680964277b.jpg" alt="fried-rice-and-plantain" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-lg hover:text-secondary">Fried Rice & Plantain</h4>
+              <p class="text-sm hover:text-secondary">Fried rice with vegetables, spices, and chicken, paired with fried plantains.</p>
+              <p class="font-bold text-amber-600 mt-2">₦5,500</p>
+            </div>
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/9ea5549cb394b358fee934f6a2ef414d.jpg" alt="Pepper-soup" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-lg hover:text-secondary">Pepper soup</h4>
+              <p class="text-sm hover:text-secondary">A spicy broth made with goat meat or catfish, infused with herbs and pepper.</p>
+              <p class="font-bold text-amber-600 mt-2">₦5,500</p>
+            </div>
+          </div>
+
+          <h3 class="my-10 py-1 px-2 rounded-[5px] uppercase font-bold bg-highlight w-full text-2xl tracking-normal">Drinks</h3>
+      
+          <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-[95%] m-auto px-8">
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/fa4a8ec95b0a9b3b41e1038b12850bfc.jpg" alt="Zobo" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-[20px] hover:text-secondary">Zobo</h4>
+              <p class="text-sm hover:text-secondary">A refreshing drink made from hibiscus petals. Infused with pineapple or ginger.</p>
+              <p class="font-bold text-amber-600 mt-2">₦1,500</p>
+            </div>
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/46170c970768556da5515788f9c4bbbb.jpg" alt="Chapman" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-[20px] hover:text-secondary">Chapman</h4>
+              <p class="text-sm hover:text-secondary">A mocktail with a mix of fruit flavors. Made with soda, grenadine, and citrus slices.</p>
+              <p class="font-bold text-amber-600 mt-2">₦2,000</p>
+            </div>
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/756bd01b21bcd814763e38f6999a3036.jpg" alt="Coconut-drink" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-[20px] hover:text-secondary">Coconut drink</h4>
+              <p class="text-sm hover:text-secondary">Fresh coconut water served straight from the fruit.</p>
+              <p class="font-bold text-amber-600 mt-2">₦2,000</p>
+            </div>
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/fbb883075db80005ddc1b254abb4100b.jpg" alt="Smoothies" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-[20px] hover:text-secondary">Smoothies</h4>
+              <p class="text-sm hover:text-secondary">Blended fruit drinks made with fresh mango or banana.</p>
+              <p class="font-bold text-amber-600 mt-2">₦2,500</p>
+            </div>
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/90271883b2a1c343219c42b90c5e8c83.jpg" alt="soft-drinks" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-[20px] hover:text-secondary">Soft drinks</h4>
+              <p class="text-sm hover:text-secondary">Classic chilled beverages served ice-cold. Perfect alongside any meal.</p>
+              <p class="font-bold text-amber-600 mt-2">₦1,000</p>
+            </div>
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/cfa24c99b650e0598c2df633c2eedbd8.jpg" alt="Palm-wine" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-[20px] hover:text-secondary">Palm wine</h4>
+              <p class="text-sm hover:text-secondary">A traditional drink tapped from palm trees.</p>
+              <p class="font-bold text-amber-600 mt-2">₦2,000</p>
+            </div>
+          </div>
+
+          <h3 class="my-10 py-1 px-2 rounded-[5px] uppercase font-bold bg-highlight w-full text-2xl tracking-normal">Desserts</h3>
+      
+          <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-[95%] m-auto px-8">
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/8591bb172f77d42ec4ce4b7a21643f16.jpg" alt="Puff-puff" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-lg hover:text-secondary">Puffpuff</h4>
+              <p class="text-sm hover:text-secondary">Soft, deep-fried dough balls. Golden on the outside, fluffy on the inside.</p>
+              <p class="font-bold text-amber-600 mt-2">₦5,000</p>
+            </div>
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/9e8edd355ac2cbc4c94c4caa30204407.jpg" alt="Chin-chin" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-lg hover:text-secondary">Chin chin</h4>
+              <p class="text-sm hover:text-secondary">Crunchy fried pastry with a sweet taste. Crispy, addictive, and delicious.</p>
+              <p class="font-bold text-amber-600 mt-2">₦5,000</p>
+            </div>
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/81132db67380016136a8aa6bd73890ab.jpg" alt="Coconut-candy" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-lg hover:text-secondary">Coconut candy</h4>
+              <p class="text-sm hover:text-secondary">Treats made from coconut and sugar. Chewy texture with rich coconut flavor.</p>
+              <p class="font-bold text-amber-600 mt-2">₦5,000</p>
+            </div>
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/721bf742a81ce035f0a9accf79268592.jpg" alt="Cake-slices" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-lg hover:text-secondary">Cake slices</h4>
+              <p class="text-sm hover:text-secondary">Soft and fluffy slices of vanilla or chocolate cake. A classic sweet indulgence.</p>
+              <p class="font-bold text-amber-600 mt-2">₦1,000</p>
+            </div>
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/eaca044853bc6affface26b22f78eef5.jpg" alt="Ice-cream" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-lg hover:text-secondary">Ice cream</h4>
+              <p class="text-sm hover:text-secondary">Creamy frozen dessert with fruity flavors. Cool, smooth, and refreshing.</p>
+              <p class="font-bold text-amber-600 mt-2">₦4,500</p>
+            </div>
+            <div class="relative md:w-full m-auto text-main hover:text-secondary bg-secondary p-4 rounded-xl hover:bg-main hover:shadow-glow hover:scale-105 text-center md:text-left transition-all">
+              <div class="overlay"><img src="Images/Logo.png" alt="logo" class="w-25 md:w-27 aspect-square"/></div>
+              <img src="Images/Food/98bd54d7e90f00bb1664ccaff8c1a4f8.jpg" alt="Banana-bread" class="rounded-lg mb-3 w-full h-40 md:h-48 object-cover">
+              <h4 class="font-bold text-lg hover:text-secondary">Banana bread</h4>
+              <p class="text-sm hover:text-secondary">Moist, soft bread made with ripe bananas. Naturally sweet with a rich aroma.</p>
+              <p class="font-bold text-amber-600 mt-2">₦5,000</p>
+            </div>
+          </div>
+      </section>
+
+      <section id="choice" class="py-16 px-4">
+        <h2 class="mb-8 md:mb-16 text-3xl md:text-5xl">Why Choose Us</h2>
+        <div class="flex flex-col items-center gap-5 md:gap-5">
+          <div class="w-full md:w-4/5 flex flex-col md:flex-row items-center gap-4 md:gap-7 md:mb-0 mb-5">
+            <div class="w-48 lg:w-[269.41px] md:w-[227.5px] aspect-square"><img src="Images/ingredients.jpeg" alt="ingredients" class="w-full h-full rounded-full opacity-85"></div>
+            <div class="text-center md:text-left">
+              <i class="fas fa-carrot text-2xl md:text-4xl text-highlight"></i>
+              <h4 class="mt-1.5 text-highlight font-bold text-lg md:text-xl">Fresh Ingredients</h4>
+              <p class="max-w-xl leading-tight tracking-normal text-sm md:text-base">
+                  We use only high-quality, fresh ingredients to prepare every dish.
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:w-4/5 flex flex-col md:flex-row-reverse items-center gap-4 md:gap-7 md:mb-0 mb-5">
+            <div class="w-48 md:w-[269.41px] aspect-square"><img src="Images/chefs.jpg" alt="chefs" class="w-full h-full rounded-full opacity-85"></div>
+            <div class="text-center md:text-right">
+              <i class="fas fa-fire-burner text-2xl md:text-4xl text-highlight"></i>
+              <h4 class="mt-1.5 text-highlight font-bold text-lg md:text-xl">Experienced Chefs</h4>
+              <p class="max-w-xl leading-tight tracking-normal text-sm md:text-base">
+                  Our chefs bring years of culinary experience and passion to the kitchen, crafting meals that are both delicious and beautifully presented.
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:w-4/5 flex flex-col md:flex-row items-center gap-4 md:gap-7 md:mb-0 mb-5">
+            <div class="w-48 md:w-[269.41px] aspect-square"><img src="Images/service.webp" alt="service" class="w-full h-full rounded-full opacity-85"></div>
+            <div class="text-center md:text-left">
+              <i class="fas fa-clock text-2xl md:text-4xl text-highlight"></i>
+              <h4 class="mt-1.5 text-highlight font-bold text-lg md:text-xl">Fast & Friendly Service</h4>
+              <p class="max-w-xl leading-tight tracking-normal text-sm md:text-base">
+                  We value your time and comfort, providing quick service without compromising on quality, all in a welcoming and friendly environment.
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:w-4/5 flex flex-col md:flex-row-reverse items-center gap-4 md:gap-7 md:mb-0 mb-5">
+            <div class="w-48 h-48 lg:w-[269.41px] lg:h-[269.41px] md:w-[178.71px] md:h-[178.71px] aspect-square"><img src="Images/cozy.jpeg" alt="cozy" class="w-full h-full rounded-full opacity-85"></div>
+            <div class="text-center md:text-right">
+              <i class="fas fa-house-chimney text-2xl md:text-4xl text-highlight"></i>
+              <h4 class="mt-1.5 text-highlight font-bold text-lg md:text-xl">Cozy Atmosphere</h4>
+              <p class="max-w-xl leading-tight tracking-normal text-sm md:text-base">
+                  Enjoy your meals in a warm and relaxing setting designed to make every visit comfortable, whether you're dining alone or with loved ones.
+              </p>
+            </div>
+          </div> 
+        </div>        
+      </section>
+
+      <section id="reviews" class="bg-secondary text-main text-center py-16 px-4">
+        <h2 class="text-3xl md:text-5xl mb-4">Reviews</h2>
+        <p class="text-sm md:text-base mb-12 md:mb-16">What people say about us</p>
+        <div class="flex flex-col md:flex-row justify-center items-start gap-12 md:gap-8 px-4 pt-12">
+                <div class="w-full md:w-1/3 bg-main text-secondary rounded-xl border-3 border-highlight p-6 pt-12 relative">
+                    <img class="w-20 h-20 rounded-full border-3 border-main absolute -top-10 left-1/2 transform -translate-x-1/2 object-cover" 
+                         src="Images/profile-pic.avif" 
+                         alt="Esther Olawole">
+                    <p class="text-sm italic mt-4">
+                        <span class="text-lg">"</span> Service was great, prompt and efficient. My meal was filling, hot and tasty. Excellent, all round. <span class="text-lg">"</span>
+                    </p>
+                    <span class="font-bold block mt-4">Esther Olawole</span>
+                </div>
+                <div class="w-full md:w-1/3 bg-main text-secondary rounded-xl border-3 border-highlight p-6 pt-12 relative">
+                    <img class="w-20 h-20 rounded-full border-3 border-main absolute -top-10 left-1/2 transform -translate-x-1/2 object-cover" 
+                         alt="Moyo Abiodun"
+                         src="Images/profile-pic-2.avif">
+                    <p class="text-sm italic mt-4">
+                        <span class="text-lg">"</span> Just had a meal from Savory Naija, and wow! Like a warm hug in a bowl—absolutely loved every bite! <span class="text-lg">"</span>
+                    </p>
+                    <span class="font-bold block mt-4">Moyo Abiodun</span>
+                </div>
+                <div class="w-full md:w-1/3 bg-main text-secondary rounded-xl border-3 border-highlight p-6 pt-12 relative">
+                    <img class="w-20 h-20 rounded-full border-3 border-main absolute -top-10 left-1/2 transform -translate-x-1/2 object-cover" 
+                         alt="John Bankole"
+                         src="Images/profile-pic-3.avif">
+                    <p class="text-sm italic mt-4">
+                        <span class="text-lg">"</span> Cozy environment, friendly staff, and good food. Perfect for breakfast, lunch and dinner. <span class="text-lg">"</span>
+                    </p>
+                    <span class="font-bold block mt-4">John Bankole</span>
+                </div>
+            </div>
+      </section>
+
+      <section id="contact" class="bg-main py-16 px-6 flex flex-col-reverse md:flex-row justify-between border-b-2 border-secondary">
+          <div class="text-left w-full md:w-2/5 mb-15 md:mb-0">
+            <h2 class="hidden md:block text-secondary mb-4 text-3xl md:text-5xl">Book Your Table</h2>
+            <p class="hidden md:block opacity-70 mb-8 md:mb-16 text-sm md:text-base">From food to atmosphere, get a full taste of our story. <br>Discover the moments guests love to share</p>
+            <div class="space-y-4">
+              <span class="block"><i class="mr-2 fa-solid fa-location-dot"></i>20 Issac John St, Ikeja, Lagos, 100271</span>
+              <span class="block"><i class="mr-2 fa-solid fa-envelope"></i>Savory@naija.com</span>
+              <span class="block"><i class="mr-2 fa-solid fa-phone"></i>08012345678</span>
+            </div>
+          </div> 
+          <form class="w-full md:w-1/2 mb-15 md:mb-0">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <h2 class="md:hidden text-secondary mb-4 text-3xl md:text-5xl md:col-span-2">Book Your Table</h2>
+                    <div class="input-box">
+                        <input id="name-input" placeholder="Your Name..." type="text" class="w-full">
+                        <label for="name-input">Full Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input id="email-input" placeholder="Your Email..." type="email" class="w-full">
+                        <label for="email-input">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <input id="number-input" placeholder="Phone Number..." type="tel" class="w-full">
+                        <label for="number-input">Phone Number</label>
+                    </div>
+                    <div class="input-box">
+                        <input id="guest-input" placeholder="Number of Guests..." type="number" min="1" class="w-full">
+                        <label for="guest-input">Guests</label>
+                    </div>
+                    <div class="input-box">
+                        <input id="date-input" type="date" class="w-full">
+                        <label for="date-input">Date</label>
+                    </div>
+                    <div class="input-box">
+                        <input id="time-input" type="time" class="w-full">
+                        <label for="time-input">Time</label>
+                    </div>
+                    <div class="input-box md:col-span-2">
+                        <textarea placeholder="Any special requests?" id="comment-input" rows="4" class="w-full"></textarea>
+                        <label for="comment-input">Add a note</label>
+                    </div>
+                </div>
+                <button class="btns mt-6 w-full md:w-auto">Reserve a Table</button>
+          </form>
+      </section>
+    </main>
+
+    <footer class="py-16 px-4 flex flex-col items-center">
+      <ul class="flex flex-row gap-8 md:gap-10 list-disc mb-10 text-[14px] md:text-xl opacity-80 text-secondary font-rayden text-center md:text-left">
+        <li><span class="text-highlight">Delicious Meals</span></li>
+        <li><span class="text-highlight">Unforgettable Moments</span></li>
+      </ul>
+      <span class="text-4xl md:text-9xl mb-10 md:mb-20 font-bold font-bavory text-center">Savory Naija</span>
+      <div class="w-full flex flex-col md:flex-row justify-center gap-8 md:gap-16 text-center md:text-left">
+        <div>
+          <p class="text-lg md:text-xl font-bold mb-2.5">Contact</p>
+          <p class="text-sm md:text-base opacity-70 leading-loose">20 Issac John St <br> Ikeja, Lagos, 100271 <br>08012345678</p>
+        </div>
+        <div>
+          <p class="text-lg md:text-xl font-bold mb-2.5">Hours</p>
+          <p class="text-sm md:text-base opacity-70 mb-1.5">Mon-Thu: 11:30 AM - 10:00 PM</p>
+          <p class="text-sm md:text-base opacity-70 mb-1.5">Fri-Sat: 11:30 AM - 11:00 PM</p>
+          <p class="text-sm md:text-base opacity-70 mb-1.5">Sun: 11:00 AM - 9:00 PM</p>
+        </div>
+        <div>
+          <p class="text-lg md:text-xl font-bold mb-2.5">Follow Us</p>
+          <p class="text-sm md:text-base mb-1.5"><i class="text-[16px] mr-1.5 fa-brands fa-facebook-f"></i><span class="opacity-70">Facebook</span></p>
+          <p class="text-sm md:text-base mb-1.5"><i class="text-[16px] mr-1.5 fa-brands fa-instagram"></i><span class="opacity-70">Instagram</span></p>
+          <p class="text-sm md:text-base mb-1.5"><i class="text-[16px] mr-1.5 fa-brands fa-x-twitter"></i><span class="opacity-70">Twitter</span></p>
+        </div>
+      </div>
+      <hr class="mb-7 mt-16 bg-linear-to-r from-transparent via-highlight to-transparent h-px border-0 w-full">
+      <p class="text-sm md:text-base opacity-80">&copy; SavoryNaija. All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
