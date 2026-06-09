@@ -1114,7 +1114,7 @@
     max-width: 90%;
     text-align: center;
     z-index: 3;
-    margin-top: 4.2rem;
+    margin-top: 4.7rem;
   }
   #typewriter-text {
     font-size: 0.65rem;
@@ -1131,7 +1131,7 @@
   }
   @media (min-width: 320px) {
     .not-expanded {
-      width: min(18rem, 85vw);
+      width: 100%;
       margin-top: -8rem;
     }
     #typewriter-text {
@@ -1143,11 +1143,11 @@
   }
   @media (min-width: 375px) {
     .not-expanded {
-      width: min(22rem, 80vw);
+      width: 100%;
       margin-top: -8rem;
     }
     #text-div {
-      margin-top: 5.2rem;
+      margin-top: 6.5rem;
     }
     #typewriter-text {
       font-size: 0.7rem;
@@ -1155,11 +1155,11 @@
   }
   @media (min-width: 425px) {
     .not-expanded {
-      width: min(25rem, 80vw);
+      width: 100%;
       margin-top: -7rem;
     }
     #text-div {
-      margin-top: 7.6rem;
+      margin-top: 10rem;
     }
     #typewriter-text {
       font-size: 0.75rem;
@@ -1212,11 +1212,11 @@
       margin-top: -4rem;
     }
     #text-div {
-      margin-top: 4rem;
+      margin-top: 15rem;
     }
     #typewriter-text {
       font-size: 1rem;
-      max-width: 80%;
+      max-width: 59%;
     }
     #button-group {
       margin-top: 0.5rem;
