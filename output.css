@@ -1361,6 +1361,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
   .over-div {
     background-color: var(--color-overlay);
